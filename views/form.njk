@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="/public/lib/mdb/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="/public/lib/mdb/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="/public/lib/mdb/css/style.css" rel="stylesheet">
+    <style type="text/css">
+        html,
+        body,
+        header,
+        .view {
+            height: 100%;
+        }
+
+        @media (max-width: 740px) {
+            html,
+            body,
+            header,
+            .view {
+                height: 1000px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+            html,
+            body,
+            header,
+            .view {
+                height: 650px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+        <!-- Brand -->
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+<!--                <li class="nav-item ">-->
+<!--                    <a class="nav-link" href="#">О нас-->
+<!--                    </a>-->
+<!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="/help"
+                    >МузOn</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/" >Экспонаты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/help"
+                     >Помощь</a>
+                </li>
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <div class="input-group md-form form-sm form-2 pl-0 m-0">
+                        <input id="search" onchange="Teleport()" list="musicList"
+                               class="form-control my-0 py-1 red-border text-white" type="text" aria-label="Search">
+                        <div class="input-group-append">
+    <span class="input-group-text red lighten-3" onclick="Teleport()" id="basic-text1"
+          style="background-color: rgba(255,255,255,0.1)!important;"><i class="fas fa-search text-grey text-white"
+                                                                        aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    <datalist id="musicList">
+                        <a href="#organ">
+                            <option value="Орган"/>
+                        </a>
+                        <a href="#gusli">
+                        <option value="Гусли"/>
+                        </a>
+                        <a href="#domra">
+                        <option value="Домра" />
+                        </a>
+                    </datalist>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Full Page Intro -->
+<div class="view full-page-intro" style="background-color: #0A166A">
+
+    <!-- Mask & flexbox options-->
+    <div class="d-flex justify-content-center" style="margin-top: 100px;">
+ <span class="badge badge-pill badge-default btn active" style="  padding: 20px 30px 20px 30px;
+    font-size: 20px;display: flex;
+    align-self: flex-start;">Средневековье</span>
+        <a href="/next">
+        <span class="badge badge-pill badge-default btn" style="background-color: rgba(255,255,255,0.1)!important;    padding: 20px 30px 20px 30px;
+    font-size: 20px;display: flex;
+    align-self: flex-start; ">Ренессанс</span>
+        </a>
+        <span class="badge badge-pill badge-default btn" style="background-color: rgba(255,255,255,0.1)!important;    padding: 20px 30px 20px 30px;
+    font-size: 20px;display: flex;
+    align-self: flex-start;">Барокко</span>
+        <span class="badge badge-pill badge-default btn" style="background-color: rgba(255,255,255,0.1)!important;    padding: 20px 30px 20px 30px;
+    font-size: 20px;display: flex;
+    align-self: flex-start;">Классицизм</span>
+        <span class="badge badge-pill badge-default btn" style="background-color: rgba(255,255,255,0.1)!important;    padding: 20px 30px 20px 30px;
+    font-size: 20px;display: flex;
+    align-self: flex-start; ">Романтизм</span>
+        <span class="badge badge-pill badge-default btn" style="background-color: rgba(255,255,255,0.1)!important;    padding: 20px 30px 20px 30px;
+    font-size: 20px;display: flex;
+    align-self: flex-start; ">ХХ век</span>
+        <span class="badge badge-pill badge-default btn" style="background-color: rgba(255,255,255,0.1)!important;    padding: 20px 30px 20px 30px;
+    font-size: 20px;display: flex;
+    align-self: flex-start;">XXI век</span>
+    </div>
+
+    <!-- Content -->
+    <div class="text-center white-text mx-5 wow fadeIn" style="
+    margin-top: 200px;">
+
+        <h1 class="mb-4">
+            <strong>Музыка эпохи средневековья</strong>
+        </h1>
+        <p class="mb-4 d-none d-md-block">
+            <strong>Период развития музыкальной культуры, охватывающий промежуток времени примерно с V по XV века н.э. Широкое распространение светского профессионализма, приобретающего виртуозный характер, ограничение
+                устной традицией и
+                монодическими формами, достигающими, однако, высокой
+                изощрённости в отношении мелодики и ритмики, создание весьма устойчивых национальных
+                и межнациональных систем музыкального мышления. </strong>
+        </p>
+
+        <div class="font-weight-bold" style="margin-top: 60px;">Узнать больше
+        </div>
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="/next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</div>
+
+<p class="scroll-down" style="margin-top: 230px;"><a href="#instruments" class="animate">More</a></p>
+
+<!--Main layout-->
+<main style="background-color: #0A166A" id="instruments">
+    <div class="container">
+
+        <!--Section: Main info-->
+        <div class="wow fadeIn">
+
+            <div class="container mt-5">
+
+
+                <!--Section: Content-->
+                <section id="organ" class="">
+
+                    <style>
+                        @media (max-width: 767px) {
+                            .social-buttons .btn {
+                                padding: 8px 15px;
+                                margin: 1px;
+                            }
+                        }
+                    </style>
+                    <h1 class="mb-4 d-flex justify-content-center">
+                        <strong>Орган</strong>
+                    </h1>
+
+                    <div class="d-flex">
+                        <img src="/public/img/organ.jpg" class="img-fluid z-depth-1 rounded mb-4"
+                             alt="" style="    max-width: 60%;
+    margin-right: 20px;">
+                        <div>
+                        <p class="mb-4 d-none d-md-block text-justify">
+                            Эпоха
+                            <strong>: средневековье</strong>
+                        </p>
+                        <p class="mb-4 d-none d-md-block text-justify">
+                            <strong>Клавишный духовой музыкальный инструмент.
+                                Орган — один из древнейших музыкальных инструментов. Его история насчитывает несколько
+                                тысяч лет. Искусство строить органы развилось и в Италии, откуда в IX веке они
+                                выписывались во Францию. Позднее это искусство развилось в Германии. Повсеместное
+                                распространение в западной Европе орган получил начиная с XIV века. Средневековые
+                                органы, в сравнении с более поздними, были грубой работы; ручная клавиатура, например,
+                                состояла из клавиш шириной от 5 до 7 см, расстояние между клавишами достигало полутора
+                                см. Ударяли по клавишам не пальцами, как теперь, а кулаками. В XV веке были уменьшены
+                                клавиши и увеличено число труб.</strong>
+                        </p>
+                        </div>
+                    </div>
+                    <p class="mb-4">
+                        <audio controls src="/public/organ.mp3" preload="auto"></audio>
+
+                    </p>
+            </div>
+
+            </section>
+
+            <hr class="my-5">
+
+            <!--Section: Main features & Quick Start-->
+            <section id="gusli" class="">
+
+                <style>
+                    @media (max-width: 767px) {
+                        .social-buttons .btn {
+                            padding: 8px 15px;
+                            margin: 1px;
+                        }
+                    }
+                </style>
+                <h1 class="mb-4 d-flex justify-content-center">
+                    <strong>Гyсли</strong>
+                </h1>
+
+                <div class="d-flex">
+                    <img src="/public/img/gusli.jpg" class="img-fluid z-depth-1 rounded mb-4"
+                         alt="" style="    max-width: 60%;
+    margin-right: 20px;">
+                    <div>
+                        <p class="mb-4 d-none d-md-block text-justify">
+                            Эпоха
+                            <strong>: средневековье</strong>
+                        </p>
+                    <p class="mb-4 d-none d-md-block text-justify">
+                        <strong>Русский народный струнный щипковый музыкальный инструмент типа цитры. Название, которое
+                            встречается с XI века, исторически могло относиться к различным музыкальным инструментам.
+                            Ныне гуслями чаще всего называют струнный щипковый инструмент трапециевидной формы,
+                            наподобие цитры (так называемые крыловидные гусли). Музыкантов, играющих на гуслях, называют
+                            гуслярами. На гуслях играют сидя или стоя. </strong>
+                    </p>
+                    </div>
+                </div>
+                <p class="mb-4">
+                    <audio controls src="/public/gusli.mp3" preload="auto"></audio>
+
+                </p>
+        </div>
+
+        </section>
+        <!--Section: Main features & Quick Start-->
+
+        <hr class="my-5">
+
+        <!--Section: Not enough-->
+        <section id="domra" class="">
+
+            <style>
+                @media (max-width: 767px) {
+                    .social-buttons .btn {
+                        padding: 8px 15px;
+                        margin: 1px;
+                    }
+                }
+            </style>
+            <h1 class="mb-4 d-flex justify-content-center">
+                <strong>Домра</strong>
+            </h1>
+
+            <div class="d-flex">
+                <img src="/public/img/domra.jpg" class="img-fluid z-depth-1 rounded mb-4"
+                     alt="" style="    max-width: 60%;
+    margin-right: 20px;">
+                <div>
+                    <p class="mb-4 d-none d-md-block text-justify">
+                        Эпоха
+                        <strong>: средневековье</strong>
+                    </p>
+                <p class="mb-4 d-none d-md-block text-justify">
+                    <strong> Русский, украинский и белорусский народный струнный щипковый музыкальный инструмент. Домра
+                        имеет корпус полусферической формы. Звук струн производится при помощи медиатора. Характерным
+                        приёмом звукоизвлечения является тремоло. Существуют два вида домр: трёхструнная домра с
+                        квартовым строем, традиционно использующаяся в России, и четырёхструнная домра с квинтовым
+                        строем, получившая наибольшее распространение в Белоруссии и на Украине. </strong>
+                </p>
+                </div>
+            </div>
+            <p class="mb-4">
+                <audio controls src="/public/domra.mp3" preload="auto"></audio>
+
+            </p>
+    </div>
+
+    </section>
+    </div>
+</main>
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script>function Teleport() {
+    let inf = document.querySelector('#search').value;
+    if (inf == "Орган") {
+        window.location.hash = '#organ';
+    } else if (inf == "Гусли") {
+        window.location.hash = '#gusli';
+    } else if (inf == "Домра") {
+        window.location.hash = '#domra';
+    }
+    else {
+        alert("По вашему запросу ничего не было найдено, возможно вы не ввели название музыкального инструмента в поле для ввода.");
+    }
+}</script>
+<script type="text/javascript" src="/public/lib/mdb/js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/public/lib/mdb/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/public/lib/mdb/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/public/lib/mdb/js/mdb.min.js"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+</script>
+</body>
+
+</html>

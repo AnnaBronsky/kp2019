@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="/public/lib/mdb/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="/public/lib/mdb/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="/public/lib/mdb/css/style.css" rel="stylesheet">
+    <style type="text/css">
+        html,
+        body,
+        header,
+        .view {
+            height: 100%;
+        }
+
+        @media (max-width: 740px) {
+            html,
+            body,
+            header,
+            .view {
+                height: 1000px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+            html,
+            body,
+            header,
+            .view {
+                height: 650px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+        <!-- Brand -->
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+                <!--                <li class="nav-item ">-->
+                <!--                    <a class="nav-link" href="#">О нас-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Экспонаты</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/help"
+                    >Помощь</a>
+                </li>
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <div class="input-group md-form form-sm form-2 pl-0 m-0">
+                        <input class="form-control my-0 py-1 red-border text-white" type="text" aria-label="Search">
+                        <div class="input-group-append">
+    <span class="input-group-text red lighten-3" id="basic-text1"
+          style="background-color: rgba(255,255,255,0.1)!important;"><i class="fas fa-search text-grey text-white"
+                                                                        aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Full Page Intro -->
+<div class="view full-page-intro" style="background-color: #0A166A">
+
+    <!-- Mask & flexbox options-->
+    <div class="d-flex justify-content-center mt-5">
+        <div class="container my-5">
+
+
+            <!--Section: Content-->
+            <section>
+
+                <h3 class="font-weight-bold mb-4 pb-2 text-center">Недавно заданные вопросы</h3>
+                <!-- Section description -->
+                <p class="lead mx-auto mt-4 pt-2 mb-5 text-center">Есть вопросы? У нас обязательно найдутся ответы.</p>
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-10 mx-auto mb-5">
+
+                        <!--Accordion wrapper-->
+                        <div class="accordion md-accordion text-white" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                            <!-- Accordion card -->
+                            <div style="background-color: rgba(255,255,255,0.1)" class="card border-top border-bottom-0 border-left border-right border-light">
+
+                                <!-- Card header -->
+                                <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
+                                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                       aria-expanded="true"
+                                       aria-controls="collapseOne1">
+                                        <h5 class="text-white font-weight-normal mb-0">
+                                            Что я могу сделать на этом сайте? <i
+                                                class="fas fa-angle-down rotate-icon"></i>
+                                        </h5>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseOne1" class="collapse show" role="tabpanel"
+                                     aria-labelledby="headingOne1"
+                                     data-parent="#accordionEx">
+                                    <div class="card-body">
+                                        На нашем сайте вы можете узнать информацию о различных эпохах в музыке, почитать
+                                        про музыкальные инструменты, которые были популярны в каждую эпоху, а также
+                                        прослушать звучание каждого из них.
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                    <video width="400" height="250" controls>
+                                        <source src="/public/1.webm" type="video/mp4">
+                                        Ваш браузер не поддерживает данный видеотег.
+                                    </video>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Accordion card -->
+
+                            <!-- Accordion card -->
+                            <div style="background-color: rgba(255,255,255,0.1)" class="card border-bottom-0 border-left border-right border-light">
+
+                                <!-- Card header -->
+                                <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                                       href="#collapseTwo2"
+                                       aria-expanded="false" aria-controls="collapseTwo2">
+                                        <h5 class="text-white font-weight-normal mb-0">
+                                            Как мне прослушать звучание музыкальных инструментов?<i
+                                                class="fas fa-angle-down rotate-icon"></i>
+                                        </h5>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                                     data-parent="#accordionEx">
+                                    <div class="card-body">
+                                        Введите в строку поиска или выберите интересующий вас инструмент. При нажатии на
+                                        иконку поиска вы перейдете на страницу инструмента, где находится аудиоплеер.
+                                        Также вы можете перейти к инструментам через выбор необходимой эпохи и
+                                        последующим нажатием на стрелочку вниз или прокручиванием страницы.
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <video width="400" height="250" controls>
+                                            <source src="/public/2.webm" type="video/mp4">
+                                            Ваш браузер не поддерживает данный видеотег.
+                                        </video>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Accordion card -->
+
+                            <!-- Accordion card -->
+                            <div style="background-color: rgba(255,255,255,0.1)" class="card  border-left border-right border-light">
+
+                                <!-- Card header -->
+                                <div class="card-header border-bottom border-light" role="tab" id="headingThree3">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                                       href="#collapseThree3"
+                                       aria-expanded="false" aria-controls="collapseThree3">
+                                        <h5 class="text-white font-weight-normal mb-0">
+                                            Что это за эпохи, по которым распределены музыкальные инструменты? <i class="fas fa-angle-down rotate-icon"></i>
+                                        </h5>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseThree3" class="collapse" role="tabpanel"
+                                     aria-labelledby="headingThree3"
+                                     data-parent="#accordionEx">
+                                    <div class="card-body">
+                                        В нашем музее все экспонаты распределены по временным промежуткам, называемыми эпохами. Узнать про конкретные даты можно из описания эпох.
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <video width="400" height="250" controls>
+                                            <source src="/public/3.webm" type="video/mp4">
+                                            Ваш браузер не поддерживает данный видеотег.
+                                        </video>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Accordion card -->
+
+                            <!-- Accordion card -->
+<!--                            <div style="background-color: rgba(255,255,255,0.1)" class="card border-left border-right border-light">-->
+
+<!--                                &lt;!&ndash; Card header &ndash;&gt;-->
+<!--                                <div class="card-header border-bottom border-light" role="tab" id="headingThree4">-->
+<!--                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"-->
+<!--                                       href="#collapseThree4"-->
+<!--                                       aria-expanded="false" aria-controls="collapseThree4">-->
+<!--                                        <h5 class="text-white font-weight-normal mb-0">-->
+<!--                                            Can I request refund? <i class="fas fa-angle-down rotate-icon"></i>-->
+<!--                                        </h5>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+
+<!--                                &lt;!&ndash; Card body &ndash;&gt;-->
+<!--                                <div id="collapseThree4" class="collapse" role="tabpanel"-->
+<!--                                     aria-labelledby="headingThree4"-->
+<!--                                     data-parent="#accordionEx">-->
+<!--                                    <div class="card-body">-->
+<!--                                        Unfortunately, not. We do not issue full or partial refunds for any reason.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+                            <!-- Accordion card -->
+
+                        </div>
+                        <!-- Accordion wrapper -->
+
+                    </div>
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="/public/lib/mdb/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/public/lib/mdb/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/public/lib/mdb/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/public/lib/mdb/js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+</body>
+
+</html>
